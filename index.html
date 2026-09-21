@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>After Hours — Movie Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow"><span></span> Personal movie watchlist</p>
+        <div class="hero-total"><strong id="movie-count">116</strong><span>titles saved</span></div>
+      </header>
+
+      <section class="controls" aria-label="Library controls">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search the collection" /></label>
+        <select id="genre-filter" aria-label="Filter by genre"><option value="all">All genres</option></select>
+        <button class="recent-filter" id="recent-filter" type="button" aria-pressed="false">Recently added</button>
+        <button class="sort-toggle" id="rating-sort" type="button">Rating <span>↕</span></button>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        <button class="add-movie" id="add-movie" type="button">+ Add movie</button>
+      </section>
+
+      <section class="library" aria-label="Movie library">
+        <div class="table-head"><span></span><span>Genre</span><span>Title</span><span>Year</span><span>IMDb rating</span><span></span></div>
+        <div id="movie-list" class="movie-list"></div>
+        <p class="empty" id="empty" hidden>No titles match that search.</p>
+      </section>
+      <section class="removed-library" id="removed-section" hidden aria-labelledby="removed-heading">
+        <div class="removed-heading"><div><p class="eyebrow"><span></span> Archive</p><h2 id="removed-heading">Removed movies <span id="removed-count"></span></h2></div><button id="restore-all" type="button">Restore all</button></div>
+        <div class="removed-list" id="removed-list"></div>
+      </section>
+      <footer><span>Ratings are IMDb snapshot values and may shift over time.</span><span class="footer-actions"><span id="showing">Showing 116 titles</span></span></footer>
+    </main>
+    <dialog id="movie-dialog">
+      <form id="movie-form">
+        <div class="dialog-heading"><div><p class="eyebrow"><span></span> IMDb lookup</p><h2>Add a movie</h2></div><button class="dialog-close" id="dialog-close" type="button" aria-label="Close">×</button></div>
+        <label>Movie title<input id="new-title" type="text" autocomplete="off" placeholder="e.g. Arrival" required /></label>
+        <label>Year <small>Optional, for a more precise match</small><input id="new-year" type="number" min="1888" max="2100" placeholder="e.g. 2016" /></label>
+        <p class="lookup-status" id="lookup-status" aria-live="polite"></p>
+        <button class="lookup-button" id="search-imdb" type="submit">Search IMDb</button>
+        <fieldset id="movie-matches" hidden>
+          <legend>Choose a title to add</legend>
+          <div id="movie-results"></div>
+          <p class="search-help">IMDb shows its closest matches. If your movie is missing, try a more specific title.</p>
+          <button class="lookup-button" id="confirm-movie" type="button" disabled>Add selected movie</button>
+        </fieldset>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
