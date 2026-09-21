@@ -1,0 +1,2 @@
+# Use GPT-6 Astra by default for Codex tasks in this project.
+model = "gpt-6-astra"
