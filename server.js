@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = __dirname;
+const port = Number(process.env.PORT || 4173);
 const mimeTypes = { '.html':'text/html; charset=utf-8', '.js':'text/javascript; charset=utf-8', '.css':'text/css; charset=utf-8', '.webmanifest':'application/manifest+json; charset=utf-8', '.png':'image/png', '.svg':'image/svg+xml' };
 const normalizeTitle = value => value.toLowerCase().replace(/^the\s+/, '').replace(/[^a-z0-9]/g, '');
 const posterCache = new Map();
@@ -92,4 +93,4 @@ http.createServer(async (request, response) => {
   const filePath = path.resolve(root, requested);
   if (!filePath.startsWith(root + path.sep) && filePath !== path.join(root, 'index.html')) { response.writeHead(403); return response.end('Forbidden'); }
   fs.readFile(filePath, (error, data) => { response.writeHead(error ? 404 : 200, { 'Content-Type':mimeTypes[path.extname(filePath)] || 'application/octet-stream', 'Cache-Control':'no-store' }); response.end(error ? 'Not found' : data); });
-}).listen(4173, '0.0.0.0', () => console.log('Movie Manager: http://localhost:4173'));
+}).listen(port, '0.0.0.0', () => console.log(`Movie Manager: http://localhost:${port}`));
