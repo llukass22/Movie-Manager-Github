@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = __dirname;
-const mimeTypes = { '.html':'text/html; charset=utf-8', '.js':'text/javascript; charset=utf-8', '.css':'text/css; charset=utf-8' };
+const mimeTypes = { '.html':'text/html; charset=utf-8', '.js':'text/javascript; charset=utf-8', '.css':'text/css; charset=utf-8', '.webmanifest':'application/manifest+json; charset=utf-8', '.png':'image/png', '.svg':'image/svg+xml' };
 const normalizeTitle = value => value.toLowerCase().replace(/^the\s+/, '').replace(/[^a-z0-9]/g, '');
 const posterCache = new Map();
 const posterCacheDirectory = path.join(root, '.poster-cache');

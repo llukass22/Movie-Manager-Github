@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" id="theme-color" content="#191613" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Movies" />
     <title>After Hours — Movie Manager</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/movie-manager-192.png" />
+    <link rel="apple-touch-icon" href="/icons/movie-manager-192.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@600;700&display=swap" rel="stylesheet" />
@@ -13,7 +20,7 @@
     <main class="shell">
       <header class="hero">
         <p class="eyebrow"><span></span> Personal movie watchlist</p>
-        <div class="hero-total"><strong id="movie-count">116</strong><span>titles saved</span></div>
+        <div class="hero-total"><strong id="movie-count">114</strong><span>titles saved</span></div>
       </header>
 
       <section class="controls" aria-label="Library controls">
@@ -34,7 +41,7 @@
         <div class="removed-heading"><div><p class="eyebrow"><span></span> Archive</p><h2 id="removed-heading">Removed movies <span id="removed-count"></span></h2></div><button id="restore-all" type="button">Restore all</button></div>
         <div class="removed-list" id="removed-list"></div>
       </section>
-      <footer><span>Ratings are IMDb snapshot values and may shift over time.</span><span class="footer-actions"><span id="showing">Showing 116 titles</span></span></footer>
+      <footer><span>Ratings are IMDb snapshot values and may shift over time.</span><span class="footer-actions"><span id="showing">Showing 114 titles</span></span></footer>
     </main>
     <dialog id="movie-dialog">
       <form id="movie-form">
