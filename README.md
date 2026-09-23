@@ -1,2 +1,2 @@
-# Movie-Manager-Githib
+# Movie-Manager-Github
 personal movie watchlist
