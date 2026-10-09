@@ -1,6 +1,6 @@
 {
-  "name": "Movie Manager",
-  "short_name": "Movies",
+  "name": "Watchlist",
+  "short_name": "Watchlist",
   "description": "A personal movie watchlist with IMDb details and posters.",
   "id": "/",
   "start_url": "/",
