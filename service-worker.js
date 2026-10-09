@@ -1,4 +1,4 @@
-const APP_CACHE = 'movie-manager-interface-v4';
+const APP_CACHE = 'movie-manager-interface-v5';
 const MEDIA_CACHE = 'movie-manager-media-v1';
 const APP_SHELL = [
   '/',

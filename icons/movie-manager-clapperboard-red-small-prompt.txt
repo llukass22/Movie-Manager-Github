@@ -1,0 +1,5 @@
+Created with built-in image_gen.
+Use case: precise-object-edit.
+Input image: edit target.
+Change only the size of the red clapperboard object within the square image: scale the complete symbol down uniformly to 85 percent of its current width and height, keeping it centered. Keep the same canvas size and extend the identical charcoal background into the freed area.
+Preserve the exact shape, proportions, rounded corners, raised-bar angle, three diagonal cutouts, vivid red #FF0000, and thick outline style. All parts and stroke thickness scale together. Do not independently thin the outline. No redesign, no new details, no text, no glow or shadows.
