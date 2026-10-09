@@ -1,4 +1,4 @@
-const APP_CACHE = 'movie-manager-interface-v2';
+const APP_CACHE = 'movie-manager-interface-v3';
 const MEDIA_CACHE = 'movie-manager-media-v1';
 const APP_SHELL = [
   '/',
@@ -7,7 +7,8 @@ const APP_SHELL = [
   '/app.js',
   '/manifest.webmanifest',
   '/icons/movie-manager-192.png',
-  '/icons/movie-manager-512.png'
+  '/icons/movie-manager-512.png',
+  '/icons/movie-manager-512-maskable.png'
 ];
 
 self.addEventListener('install', event => {

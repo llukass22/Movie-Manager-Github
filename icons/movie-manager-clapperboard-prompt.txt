@@ -1,0 +1,11 @@
+Generated with the built-in image_gen tool.
+Both supplied images were used as style references.
+
+Use case: logo-brand
+Asset type: alternative square Movie Manager project app icon
+Input images: both are style references from the user's other projects. Borrow only their extreme simplicity, single-color geometric symbols, heavy uniform strokes, softly rounded ends, large empty margins, flat solid background.
+Primary request: one very simple, symbolic cinema clapperboard icon. A chunky rounded outline of an empty rectangular slate, topped by a slightly lifted slanted clapper bar with just three large diagonal negative-space cuts. No details inside the slate. Instantly readable movie symbol at 24 pixels.
+Color palette: one solid brick-red #bf3d2b symbol on one solid dark charcoal #191613 full-bleed square canvas. Exactly these two colors except edge antialiasing.
+Composition: centered, balanced, symbol about 52 percent of canvas width, ample negative space like the supplied reference icons. Strong even rounded strokes.
+Style: flat vector-like logo, clean simple silhouette, front view.
+Constraints: no text, no letters, no play triangle, no popcorn, no checkmark, no extra symbols, no gradient, no shading, no shadow, no texture, no glow, no bevel, no 3D, no mockup. Background must be a uniform opaque square all the way to its corners. Create a new icon, not a collage of the references.
