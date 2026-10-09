@@ -1,0 +1,5 @@
+Created with built-in image_gen.
+Use case: precise-object-edit.
+Input image: edit target, current smaller vivid-red Movie Manager clapperboard icon.
+Change ONLY the background from charcoal to fully opaque pure black #000000 (RGB 0,0,0). All pixels outside the red clapperboard must be uniformly pure black, including the lower rectangular opening and all three diagonal cutouts. No texture, no gradient, no vignette, no noise, no shadows. Entire square black canvas extends to all edges and corners.
+Preserve the red symbol unchanged: exact shape, proportions, scale, position, thick outline, raised-bar angle, rounded corners, three diagonal cutouts, vivid pure-red #FF0000. No redesign, no extra elements, no text.
